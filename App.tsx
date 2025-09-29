@@ -200,14 +200,14 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-100 dark:bg-gray-900 text-slate-800 dark:text-slate-200 flex flex-col items-center font-sans transition-colors duration-300">
+    <div className="min-h-screen bg-gray-100 dark:bg-black text-gray-800 dark:text-gray-200 flex flex-col items-center font-sans transition-colors duration-300">
       <Header theme={theme} onToggleTheme={toggleTheme} />
       <main className="w-full max-w-5xl mx-auto flex-grow flex flex-col items-center justify-center p-4">
-        <div className="w-full bg-white dark:bg-slate-800 rounded-2xl shadow-xl dark:shadow-2xl dark:shadow-slate-900/50 p-6 sm:p-8 md:p-10 border border-slate-200/80 dark:border-slate-700">
+        <div className="w-full bg-white dark:bg-gray-900 rounded-2xl shadow-xl dark:shadow-2xl dark:shadow-amber-950/30 p-6 sm:p-8 md:p-10 border border-gray-200/80 dark:border-gray-800">
           {renderContent()}
         </div>
       </main>
-      <footer className="w-full text-center p-4 text-slate-500 dark:text-slate-400 text-sm">
+      <footer className="w-full text-center p-4 text-gray-500 dark:text-gray-400 text-sm">
         <p>مدعوم بواسطة Gemini API</p>
       </footer>
     </div>

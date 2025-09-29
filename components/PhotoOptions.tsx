@@ -47,6 +47,7 @@ const countryOptions = [
     { id: Country.UK, label: 'بريطانيا (35x45مم)' },
     { id: Country.India, label: 'الهند (2x2")' },
     { id: Country.Japan, label: 'اليابان (35x45مم)' },
+    { id: Country.Iraq, label: 'العراق (2x2")' },
 ];
 
 const backgroundOptions = [
@@ -64,10 +65,10 @@ interface OptionButtonProps {
 const OptionButton: React.FC<OptionButtonProps> = ({ onClick, isSelected, children }) => (
     <button
         onClick={onClick}
-        className={`flex flex-col items-center justify-center p-3 rounded-lg border-2 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 text-center ${
+        className={`flex flex-col items-center justify-center p-3 rounded-lg border-2 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 text-center ${
             isSelected
-                ? 'bg-indigo-100 dark:bg-indigo-900/50 border-indigo-500 dark:border-indigo-400 text-indigo-700 dark:text-indigo-300'
-                : 'bg-slate-100 dark:bg-slate-700 border-slate-200 dark:border-slate-600 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-600 hover:border-slate-300 dark:hover:border-slate-500'
+                ? 'bg-amber-100 dark:bg-amber-900/50 border-amber-500 dark:border-amber-400 text-amber-700 dark:text-amber-300'
+                : 'bg-gray-100 dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:border-gray-300 dark:hover:border-gray-600'
         }`}
     >
         {children}
@@ -83,7 +84,7 @@ const PhotoOptions: React.FC<PhotoOptionsProps> = ({
     <div className="my-6 w-full max-w-2xl mx-auto space-y-6">
       
       <div>
-        <h3 className="text-center text-md font-semibold text-slate-700 dark:text-slate-300 mb-3">
+        <h3 className="text-center text-md font-semibold text-gray-700 dark:text-gray-300 mb-3">
           1. تغيير الملابس (اختياري)
         </h3>
         <div className="grid grid-cols-3 gap-3 max-w-sm mx-auto">
@@ -101,7 +102,7 @@ const PhotoOptions: React.FC<PhotoOptionsProps> = ({
       </div>
 
       <div>
-        <h3 className="text-center text-md font-semibold text-slate-700 dark:text-slate-300 mb-3">
+        <h3 className="text-center text-md font-semibold text-gray-700 dark:text-gray-300 mb-3">
           2. مقاس الصورة حسب الدولة
         </h3>
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
@@ -118,7 +119,7 @@ const PhotoOptions: React.FC<PhotoOptionsProps> = ({
       </div>
 
       <div>
-        <h3 className="text-center text-md font-semibold text-slate-700 dark:text-slate-300 mb-3">
+        <h3 className="text-center text-md font-semibold text-gray-700 dark:text-gray-300 mb-3">
           3. اختر لون الخلفية
         </h3>
         <div className="grid grid-cols-3 gap-3 max-w-sm mx-auto">

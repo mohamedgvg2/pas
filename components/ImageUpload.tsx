@@ -7,7 +7,7 @@ interface ImageUploadProps {
 }
 
 const UploadIcon: React.FC = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-slate-400 dark:text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
+  <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-gray-400 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
     <path strokeLinecap="round" strokeLinejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
   </svg>
 );
@@ -50,7 +50,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onImageSelect, currentImageUr
       >
         <div 
             onClick={handleClick}
-            className="group relative w-full h-80 bg-slate-50 dark:bg-slate-800/50 rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-600 flex flex-col items-center justify-center hover:border-indigo-500 dark:hover:border-indigo-400 hover:bg-indigo-50 dark:hover:bg-slate-700/50 transition-colors duration-300"
+            className="group relative w-full h-80 bg-gray-50 dark:bg-gray-900/50 rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-700 flex flex-col items-center justify-center hover:border-amber-500 dark:hover:border-amber-400 hover:bg-amber-50 dark:hover:bg-gray-800/50 transition-colors duration-300"
         >
           {currentImageUrl ? (
             <img
@@ -61,8 +61,8 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onImageSelect, currentImageUr
           ) : (
             <div className="space-y-2">
               <UploadIcon />
-              <p className="text-slate-700 dark:text-slate-300 font-semibold">اسحب وأفلت صورة هنا، أو انقر للاختيار</p>
-              <p className="text-sm text-slate-500 dark:text-slate-400">PNG, JPG, WEBP (بحد أقصى 5 ميجابايت)</p>
+              <p className="text-gray-700 dark:text-gray-300 font-semibold">اسحب وأفلت صورة هنا، أو انقر للاختيار</p>
+              <p className="text-sm text-gray-500 dark:text-gray-400">PNG, JPG, WEBP (بحد أقصى 5 ميجابايت)</p>
             </div>
           )}
         </div>

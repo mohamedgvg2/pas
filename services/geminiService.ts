@@ -18,6 +18,7 @@ const COUNTRY_SPECIFICATIONS = {
   [Country.UK]: { name: 'المملكة المتحدة', size: '35x45mm' },
   [Country.India]: { name: 'الهند', size: '2x2 inches' },
   [Country.Japan]: { name: 'اليابان', size: '35x45mm' },
+  [Country.Iraq]: { name: 'العراق', size: '2x2 inches' },
 };
 
 const BACKGROUND_COLORS = {

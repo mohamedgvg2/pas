@@ -39,16 +39,16 @@ const recommendations = [
 const Recommendations: React.FC = () => {
   return (
     <div className="mt-8 w-full max-w-lg mx-auto animate-fade-in">
-      <h3 className="text-center text-lg font-semibold text-slate-700 dark:text-slate-300 mb-4">
+      <h3 className="text-center text-lg font-semibold text-gray-700 dark:text-gray-300 mb-4">
         نصائح للحصول على أفضل النتائج
       </h3>
       <ul className="space-y-3">
         {recommendations.map((item, index) => (
-          <li key={index} className="flex items-start p-3 bg-slate-50 dark:bg-slate-800/60 rounded-lg border border-slate-200/80 dark:border-slate-700">
-            <div className="flex-shrink-0 w-6 h-6 text-indigo-500 dark:text-indigo-400 mr-4 rtl:ml-4 rtl:mr-0">
+          <li key={index} className="flex items-start p-3 bg-gray-50 dark:bg-gray-900/60 rounded-lg border border-gray-200/80 dark:border-gray-800">
+            <div className="flex-shrink-0 w-6 h-6 text-amber-500 dark:text-amber-400 mr-4 rtl:ml-4 rtl:mr-0">
               {item.icon}
             </div>
-            <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
               {item.text}
             </p>
           </li>

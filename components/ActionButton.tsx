@@ -12,7 +12,7 @@ const ActionButton: React.FC<ActionButtonProps> = ({ onClick, disabled, children
     <button
       onClick={onClick}
       disabled={disabled}
-      className="w-full bg-indigo-600 text-white font-bold py-4 px-4 rounded-lg hover:bg-indigo-700 transition-colors duration-300 disabled:bg-slate-400 dark:disabled:bg-slate-600 disabled:cursor-not-allowed shadow-lg shadow-indigo-300/80 dark:shadow-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 text-xl"
+      className="w-full bg-amber-600 text-white font-bold py-4 px-4 rounded-lg hover:bg-amber-700 transition-colors duration-300 disabled:bg-gray-400 dark:disabled:bg-gray-600 disabled:cursor-not-allowed shadow-lg shadow-amber-400/50 dark:shadow-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 text-xl"
     >
       {children}
     </button>
